@@ -11,3 +11,56 @@ Distancia	  | Con SUBE registrada   | Con SUBE sin registrar
 boton.addEventListener("click", () => {
   // COMPLETAR
 });
+
+let regist = registrada.value;
+let distance = distancia.value;
+
+if (regist==="si") {
+if (distance<3) {
+  alert ("TU BOLETO VALE $715.24")
+}
+
+else if (regist==="si") {
+  if (distance>=3 && distancia.value<6 ) {
+    alert ("TU BOLETO VALE $794.74")
+  }
+  }
+
+  else if (regist==="si") {
+    if (distance>=6 && distancia.value<12 ) {
+      alert ("TU BOLETO VALE $855.97")
+    }
+    }
+
+    else if (regist==="si") {
+      if (distance>12) {
+        alert ("TU BOLETO VALE $917.24")
+      }
+      }
+
+      else if (regist.value==="no") {
+        if (distance<3) {
+          alert ("TU BOLETO VALE $1137.23")
+        }
+        }
+        
+        else if (regist==="no") {
+          if (distance>=3 && distancia.value<6 ) {
+            alert ("TU BOLETO VALE $1263.64")
+          }
+          }
+        
+          else if (regist==="no") {
+            if (distance>=6 && distancia.value<12 ) {
+              alert ("TU BOLETO VALE $1360.99")
+            }
+            }
+        
+            else if(regist==="no") {
+              if (distance>12) {
+                alert ("TU BOLETO VALE $1458.41")
+              }
+              }
+            }
+  
+
