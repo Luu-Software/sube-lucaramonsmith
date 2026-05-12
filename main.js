@@ -14,53 +14,45 @@ boton.addEventListener("click", () => {
 
 let regist = registrada.value;
 let distance = distancia.value;
+let precio
 
-if (regist==="si") {
-if (distance<3) {
-  alert ("TU BOLETO VALE $715.24")
+if (distance<=3) {
+  if (regist === "si") {
+precio = 715.24;
+}
+else {
+  precio = 1137.23;
 }
 
-else if (regist==="si") {
-  if (distance>=3 && distancia.value<6 ) {
-    alert ("TU BOLETO VALE $794.74")
+if (distance<=6) {
+  if (regist === "si") {
+    precio = 794.74;
   }
+  else {
+    precio = 1263.64 
+  }
+}
+
+if  (distance<=12) {
+  if (regist === "si") {
+    precio = 855.97
+  }
+  else {
+    precio = 1360.99
+  }
+}
+
+if (distance>12) {
+  if (regist === "si") {
+    precio = 917.24
   }
 
-  else if (regist==="si") {
-    if (distance>=6 && distancia.value<12 ) {
-      alert ("TU BOLETO VALE $855.97")
-    }
-    }
+  else {
+    precio = 1458.41
+  }
 
-    else if (regist==="si") {
-      if (distance>12) {
-        alert ("TU BOLETO VALE $917.24")
-      }
-      }
+}
+tarifa.innerText="El valor de tu boleto es: $"+ precio
+}
 
-      else if (regist.value==="no") {
-        if (distance<3) {
-          alert ("TU BOLETO VALE $1137.23")
-        }
-        }
-        
-        else if (regist==="no") {
-          if (distance>=3 && distancia.value<6 ) {
-            alert ("TU BOLETO VALE $1263.64")
-          }
-          }
-        
-          else if (regist==="no") {
-            if (distance>=6 && distancia.value<12 ) {
-              alert ("TU BOLETO VALE $1360.99")
-            }
-            }
-        
-            else if(regist==="no") {
-              if (distance>12) {
-                alert ("TU BOLETO VALE $1458.41")
-              }
-              }
-            }
-  
 
