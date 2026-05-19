@@ -10,49 +10,50 @@ Distancia	  | Con SUBE registrada   | Con SUBE sin registrar
 
 boton.addEventListener("click", () => {
   // COMPLETAR
+
+  boton.addEventListener("click", () => {
+
+    let regist = registrada.value;
+    let distance = distancia.value;
+    let precio;
+  
+    if (distance <= 3) {
+      if (regist === "si") {
+        precio = 715.24;
+      } else {
+        precio = 1137.23;
+      }
+    }
+  
+    if (distance > 3 && distance <= 6) {
+      if (regist === "si") {
+        precio = 794.74;
+      } else {
+        precio = 1263.64;
+      }
+    }
+  
+    if (distance > 6 && distance <= 12) {
+      if (regist === "si") {
+        precio = 855.97;
+      } else {
+        precio = 1360.99;
+      }
+    }
+  
+    if (distance > 12) {
+      if (regist === "si") {
+        precio = 917.24;
+      } else {
+        precio = 1458.41;
+      }
+    }
+  
+    tarifa.innerText = "El valor de tu boleto es: $" + precio;
+  
+  });
+
+
+
 });
-
-let regist = registrada.value;
-let distance = distancia.value;
-let precio
-
-if (distance<=3) {
-  if (regist === "si") {
-precio = 715.24;
-}
-else {
-  precio = 1137.23;
-}
-
-if (distance<=6) {
-  if (regist === "si") {
-    precio = 794.74;
-  }
-  else {
-    precio = 1263.64 
-  }
-}
-
-if  (distance<=12) {
-  if (regist === "si") {
-    precio = 855.97
-  }
-  else {
-    precio = 1360.99
-  }
-}
-
-if (distance>12) {
-  if (regist === "si") {
-    precio = 917.24
-  }
-
-  else {
-    precio = 1458.41
-  }
-
-}
-tarifa.innerText="El valor de tu boleto es: $"+ precio
-}
-
 
