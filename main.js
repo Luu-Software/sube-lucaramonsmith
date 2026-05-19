@@ -15,6 +15,7 @@ boton.addEventListener("click", () => {
 
     let regist = registrada.value;
     let distance = distancia.value;
+    let tarifa;
     let precio;
   
     if (distance <= 3) {
